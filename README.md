@@ -2,7 +2,7 @@
 
 ## Application & Repository Link
 
-###### [Application Link](https://suji-gith.github.io/MBC-weatherDashboard/WeatherDashboard.html)
+###### [Application Link](https://suji-gith.github.io/MBC-WeatherDashboard/WeatherDashboard.html)
 
 ###### [Repository Link](https://github.com/Suji-GitH/MBC-WeatherDashboard)
 
