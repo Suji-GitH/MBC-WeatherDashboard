@@ -1,0 +1,95 @@
+/* Background */
+body {
+  background: url(../img/Initial-Background.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top center;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  
+}
+
+/* Nav bar */
+nav {
+  background: transparent;
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+  padding: 10px 10px 30px 10px;
+  font-family: 'MuseoModerno', cursive;
+}
+
+/* Search City Section */
+#searchControl {
+  width: 80%;
+  border: none;
+  outline: none;
+  background-color: rgba(255, 255, 255, 0.4);
+  border-radius: 0px 16px 0px 16px;
+  border-bottom: 3px solid silver;
+  transition: 0.2s ease-out;
+}
+
+#searchControl:focus {
+  background-color: rgba(255, 255, 255, 0.8);
+}
+
+#searchHistory {
+  width: 80%;
+  padding-top: 10px;
+}
+
+/* Main Weather Content */
+.MWC {
+  background: rgba(97, 97, 97, 0.534);
+  border-style: ridge;
+  border-color: silver;
+}
+
+#temperature {
+  color: white;
+  font-size: 40px;
+  text-align: left;
+  text-shadow: 2px 2px 5px black;
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+#weatherIcon {
+  width: 100px;
+  height: 100px;
+  margin-top: 25px;
+  margin-left: 20px;
+}
+
+.wdStats {
+  padding-top: 50px;
+}
+
+#location, #date, #humidity, #windSpeed, #uvIndex {
+  color: white;
+}
+
+#forecastBtn {
+  float: right;
+}
+
+/* 5 Day Forecast Section */
+#forecastBody {
+  margin-top: 70px;
+  background: rgba(97, 97, 97, 0.534);
+  border-style: ridge;
+  border-color: silver;  
+
+  /* visibility: hidden; */
+}
+
+  /* Weather Icon */
+  .mr-3{
+    width: 100px;
+    height: 100px;
+  }
+
+.date5, .temperature5, .humidity5 {
+  color: white;
+}

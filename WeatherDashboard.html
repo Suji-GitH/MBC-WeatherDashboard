@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+
+  <!-- Favicon reference -->
+  <link rel="icon" type="image/x-icon" href="./assets/img/Favicon/favicon.ico" />
+  <!--BootStrap style sheet-->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" />
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@500&family=MuseoModerno:wght@600&display=swap"
+    rel="stylesheet">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" />
+  <!-- Own style sheet-->
+  <link rel="stylesheet" href="./assets/css/style.css"/>
+
+  <title>Weather Dashboard</title>
+</head>
+
+<body>
+  <!-- Nav -->
+  <header>
+    <nav>
+      <span class="navbarTitle">Weather Dashboard</span>
+    </nav>
+  </header>
+
+  <!-- Search + Main content -->
+  <div class="container">
+    <div class="row">
+
+      <!-- Search Section Start-->
+      <div class="col-sm-12 col-lg-3">
+        <!-- Search Control -->
+        <div class="row">
+          <input type="text" id="searchControl" class="form-control" placeholder="Type in City Name"
+            data-toggle="tooltip" data-placement="right" title="Press Enter to Search">
+        </div>
+        <!-- Search History -->
+        <div class="row" id="searchHistory"></div>
+      </div>
+      <!-- Search Section End-->
+
+      <!-- Main Weather Content Start -->
+      <div class="MWC col-sm-12 col-lg-9">
+        <div class="row">
+
+          <!-- Weather Icon -->
+          <div class="col-sm-12 col-lg-3">
+            <div class="weatherIcon">
+              <img id="weatherIcon" src="./assets/img/default-weather-icon.png">
+            </div>
+
+            <!-- Temperature -->
+            <div class="temperature">
+              <span id="temperature">-</span>
+            </div>
+          </div>
+
+          <!-- Location, Date, humidity, Wind Speed, UV Index -->
+          <div class="col-sm-12 col-lg-9 wdStats">
+
+            <!-- Location -->
+            <div class="location">
+              <span><i class="fas fa-map-marker-alt"></i></span>
+              <span id="location">-</span>
+            </div>
+
+            <!-- Date -->
+            <div class="date">
+              <span><i class="fas fa-calendar-alt"></i></span>
+              <span id="date">-</span>
+            </div>
+
+            <!-- Humidity -->
+            <div class="humidity">
+              <span><i class="fas fa-tint"></i></span>
+              <span id="humidity">-</span>
+            </div>
+
+            <!-- Wind Speed -->
+            <div class="windSpeed">
+              <span><i class="fas fa-wind"></i></span>
+              <span id="windSpeed">-</span>
+            </div>
+
+            <!-- UV Index -->
+            <div class="uvIndex">
+              <span><i class="fas fa-sun"></i></span>
+              <span id="uvIndex">-</span>
+            </div>
+
+            <button type="button" class="btn btn-outline-dark" id="forecastBtn">5 Day Forecast</button>
+          </div>
+        </div>
+      </div>
+      <!-- Main Weather Content End -->
+    </div>
+  </div>
+
+  <!-- 5 day Forecast -->
+  <div class="container" id="forecastBody">
+    <div class="row">
+      <div class="foreCast col">
+        <div class="row">
+          <!-- Day 1 -->
+          <div class="col-sm-12 col-lg">
+            <!-- Weather Icon -->
+            <img src="./assets/img/default-weather-icon.png" class="mr-3" alt="weather icon day 1">
+            <br>
+            <!-- Date -->
+            <div>
+              <span><i class="fas fa-calendar-alt"></i></span>
+              <span class="date5"></span>
+            </div>
+            <!-- Temperature -->
+            <div>
+              <span><i class="fas fa-thermometer-half"></i></span>
+              <span class="temperature5"></span>
+            </div>
+            <!-- Humidity -->
+            <div>
+              <span><i class="fas fa-tint"></i></span>
+              <span class="humidity5"></span>
+            </div>
+          </div>
+
+          <!-- Day 2 -->
+          <div class="col-sm-12 col-lg">
+            <!-- Weather Icon -->
+            <img src="./assets/img/default-weather-icon.png" class="mr-3" alt="weather icon day 1">
+            <br>
+            <!-- Date -->
+            <div>
+              <span><i class="fas fa-calendar-alt"></i></span>
+              <span class="date5"></span>
+            </div>
+            <!-- Temperature -->
+            <div>
+              <span><i class="fas fa-thermometer-half"></i></span>
+              <span class="temperature5"></span>
+            </div>
+            <!-- Humidity -->
+            <div>
+              <span><i class="fas fa-tint"></i></span>
+              <span class="humidity5"></span>
+            </div>
+          </div>
+
+          <!-- Day 3 -->
+          <div class="col-sm-12 col-lg">
+            <!-- Weather Icon -->
+            <img src="./assets/img/default-weather-icon.png" class="mr-3" alt="weather icon day 1">
+            <br>
+            <!-- Date -->
+            <div>
+              <span><i class="fas fa-calendar-alt"></i></span>
+              <span class="date5"></span>
+            </div>
+            <!-- Temperature -->
+            <div>
+              <span><i class="fas fa-thermometer-half"></i></span>
+              <span class="temperature5"></span>
+            </div>
+            <!-- Humidity -->
+            <div>
+              <span><i class="fas fa-tint"></i></span>
+              <span class="humidity5"></span>
+            </div>
+          </div>
+
+          <!-- Day 4 -->
+          <div class="col-sm-12 col-lg">
+            <!-- Weather Icon -->
+            <img src="./assets/img/default-weather-icon.png" class="mr-3" alt="weather icon day 1">
+            <br>
+            <!-- Date -->
+            <div>
+              <span><i class="fas fa-calendar-alt"></i></span>
+              <span class="date5"></span>
+            </div>
+            <!-- Temperature -->
+            <div>
+              <span><i class="fas fa-thermometer-half"></i></span>
+              <span class="temperature5"></span>
+            </div>
+            <!-- Humidity -->
+            <div>
+              <span><i class="fas fa-tint"></i></span>
+              <span class="humidity5"></span>
+            </div>
+          </div>
+
+          <!-- Day 5 -->
+          <div class="col-sm-12 col-lg">
+            <!-- Weather Icon -->
+            <img src="./assets/img/default-weather-icon.png" class="mr-3" alt="weather icon day 1">
+            <br>
+            <!-- Date -->
+            <div>
+              <span><i class="fas fa-calendar-alt"></i></span>
+              <span class="date5"></span>
+            </div>
+            <!-- Temperature -->
+            <div>
+              <span><i class="fas fa-thermometer-half"></i></span>
+              <span class="temperature5"></span>
+            </div>
+            <!-- Humidity -->
+            <div>
+              <span><i class="fas fa-tint"></i></span>
+              <span class="humidity5"></span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+  <!-- 5 day Forecast End -->
+
+  <!-- Moment.js script link -->
+  <script src="./assets/lib/moment/moment.with-local.js"></script>
+  <!-- jquery  script link -->
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+  <!-- Bootstrap script link -->
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+  <!-- Own js script link-->
+  <script src="./assets/javascript/script.js"></script>
+
+</body>
+
+</html>
