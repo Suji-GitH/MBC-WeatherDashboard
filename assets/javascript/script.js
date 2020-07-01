@@ -144,19 +144,19 @@ function getCityWeather() {
     //Switch background to weather condition 
     switch (weatherDataList.weather[0].main) {
       case "Clear":
-        document.body.style.backgroundImage = 'url("../Assignment-6/assets/img/Clear.jpg")';
+        document.body.style.backgroundImage = 'url("./assets/img/Clear.jpg")';
         break;
       case "Clouds":
-        document.body.style.backgroundImage = 'url("../Assignment-6/assets/img/Clouds.jpg")';
+        document.body.style.backgroundImage = 'url("./assets/img/Clouds.jpg")';
         break;
       case "Rain":
-        document.body.style.backgroundImage = 'url("../Assignment-6/assets/img/Rain.jpg")';
+        document.body.style.backgroundImage = 'url("./assets/img/Rain.jpg")';
         break;
       case "Drizzle":
-        document.body.style.backgroundImage = 'url("../Assignment-6/assets/img/Drizzle.jpg")';
+        document.body.style.backgroundImage = 'url("./assets/img/Drizzle.jpg")';
         break;
       case "Thunderstorm":
-        document.body.style.backgroundImage = 'url("../Assignment-6/assets/img/Thunderstorm.jpg")';
+        document.body.style.backgroundImage = 'url("./assets/img/Thunderstorm.jpg")';
         break;    
     };
     
